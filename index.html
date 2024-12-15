@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Collector</title>
+    <style>
+        /* Applique un arrière-plan avec l'image font.png */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-image: url('font.png');
+            background-size: cover; /* L'image prend toute la page */
+            background-position: center; /* Centrer l'image */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Place le contenu en haut et le bouton en bas */
+        }
+
+        /* Style pour le titre et le texte */
+        h1, p {
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+
+        /* Style pour le bouton en bas de la page */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+            position: fixed;
+            bottom: 0;
+        }
+
+        .btn {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #fef731; /* Couleur du bouton */
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: black;
+            color : white; /* Changer de couleur lors du survol */
+        }
+    </style>
+</head>
+<body>
+    
+    
+    
+    <div class="button-container">
+        <button class="btn" id="captureButton">Scanner le Qr code pour nous rejoindre</button>
+   
+    </div>
+
+    <script type="module" src="main.js"></script>
+    
+    
+</body>
+</html>
